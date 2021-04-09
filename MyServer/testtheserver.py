@@ -21,7 +21,7 @@ if(op==1):
 		print("URL format is wrong, try again. (include http/https)")
 	else:
 		data = {'URL':inp}
-		r = requests.post('http://127.0.0.1:8000/shorten/',data=data)
+		r = requests.post('https://pitchbooks.herokuapp.com/shorten/',data=data)
 		print(r.text)
 
 if(op==2):
